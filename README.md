@@ -61,6 +61,8 @@ The XGBoost with SMOTE outperforms the other models. From the confusion matrix, 
   
 * Integrate the model into a decision support system during wine tasting to improve the speed and consistency of quality evaluations. For instance, the experts could only repeat the tasting if their quality score was significantly different from the class predicted by the model.
 
+* Improve the effectiveness of the model by adding new features such as grape variety or combination of grape varieties, wine selling price, color, phenolic compounds, and glycerol levels.
+
 * Share the findings of this project with wine manufacturers, particularly the variables that can be controlled during the production process such as alcohol content, volatile acidity, free sulfur dioxide levels and pH,  and residual sugars. 
  
 ## Note
