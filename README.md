@@ -9,7 +9,7 @@ Various algorithms like Multiple Logistic Regression, K-Nearest Neighbors, Suppo
 ## Business Understanding
 In Portugal’s wine industry, a crucial aspect of quality assurance is the certification and evaluation of wines. During the certification phase, analytical tests are utilized to measure the physicochemical components of the wine, and the wine quality is evaluated using sensory analysis by a panel of experts.  
 
-This project aims to develop a machine learning model to predict white wine quality based on objective analytical test results with the goal of reducing the inherent subjectivity present in human sensory analysis. The insights from this project will also help CVRVV (The Viticulture Commission of the Vinho Verde Region), a wine certification agency with the goal of improving the quality and marketing of Vinho Verde wines, to to gain a deeper understanding of factors that affect wine quality and to aid wine experts during sensory analysis. 
+This project aims to develop a machine learning model to predict white wine quality based on objective analytical test results with the goal of reducing the inherent subjectivity present in human sensory analysis. The insights from this project will also help CVRVV (The Viticulture Commission of the Vinho Verde Region) to gain a deeper understanding of factors that affect wine quality and to aid wine experts during sensory analysis. The CVRVV is a wine certification agency with the goal of improving the quality and marketing of Vinho Verde wines. 
 
 **Deliverables:**
 1. [One-page executive summary that would be presented to stakeholders.](https://docs.google.com/presentation/d/1oDFPnfKkoBjCuXTg55KydqY83c-4uBwVb0ZATAKvQlY/edit?usp=sharing)
