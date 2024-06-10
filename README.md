@@ -1,24 +1,27 @@
 # Predicting Quality of White Wine
 
 ## Overview
-[Link to Executive Summary]()
+The goal of this project is to analyze the provided dataset and build a predictive model that can offer insights to CVRVV (The Viticulture Commission of the Vinho Verde Region), a wine certification agency, to gain a deeper understanding of factors that affect white wine quality and to aid wine experts during sensory analysis. 
+
+Various algorithms like Multiple Logistic Regression, K-Nearest Neighbors, Support Vector Machine, Random Forest and Extreme Gradient Boosting (XGBoost) were combined with data preprocessing techniques to come up with the final model. The XGBoost with SMOTE outperforms the other models, which performs reasonably well, with a weighted f1 score of 77%, making it useful in predicting wine quality.
+
 
 ## Business Understanding
-In Portugal’s wine industry, a crucial aspect of quality assurance is the certification and evaluation of wines. During the certification phase, analytical tests are utilized to measure the physicochemical components of the wine, and the wine quality is evaluated using sensory analysis by a panel of experts. This project aims to develop a machine learning model to predict white wine quality based on objective analytical test results with the goal of reducing the inherent subjectivity present in human sensory analysis.
+In Portugal’s wine industry, a crucial aspect of quality assurance is the certification and evaluation of wines. During the certification phase, analytical tests are utilized to measure the physicochemical components of the wine, and the wine quality is evaluated using sensory analysis by a panel of experts.  
 
-### Goals and Deliverables
-**Goal:** Analyze the provided dataset and build predictive models that can offer insights to CVRVV (The Viticulture Commission of the Vinho Verde Region), a wine certification agency, to gain a deeper understanding of factors that affect wine quality and to aid wine experts during sensory analysis. 
+This project aims to develop a machine learning model to predict white wine quality based on objective analytical test results with the goal of reducing the inherent subjectivity present in human sensory analysis. The insights from this project will also help CVRVV (The Viticulture Commission of the Vinho Verde Region), a wine certification agency with the goal of improving the quality and marketing of Vinho Verde wines, to to gain a deeper understanding of factors that affect wine quality and to aid wine experts during sensory analysis. 
 
 **Deliverables:**
-1. One-page executive summary that would be presented to external stakeholders.
+1. [One-page executive summary that would be presented to external stakeholders.]()
 2. [Complete code python notebook](https://github.com/je-marco/Wine-Quality-Prediction/blob/cc927f5e9b527f70a71bb0c84fea4cc1d8a1e180/wine_quality_prediction.ipynb)
 
-### Scope and Limitation
+**Scope and Limitation:**  
 Due to the constraint of data imbalance, the classes of wine that will be predicted in this modeling effort are the following: 
 1. **low** (quality score of 0-4)
 2. **medium** (quality score of 5-6)
 3. **high** (quality score of 7-10)
-   
+
+
 ## Data Understanding
 The dataset was taken from [University of California Irvine Machine Learning Repository](https://archive.ics.uci.edu/dataset/186/wine+quality). Each entry in the dataset is the result of a given test (analytical or sensory). The type of wine represented in this dataset is the white variant of the  Portuguese "Vinho Verde" wine.
 
@@ -42,6 +45,7 @@ quality|Based on sensory data [0&ndash;10]|
 
 **Note:** The wine samples came from different manufacturers from the northwest region of Portugal and were tested at the official certification entity called CVRVV. Therefore, expect different range of results for each given test. 
 
+
 ## Modeling and Evaluation
 
 **Feature Importance:**
@@ -56,6 +60,7 @@ The feature importance graph confirms that key predictors identified during expl
 
 The XGBoost with SMOTE outperforms the other models. From the confusion matrix, the model accurately classifies 88% of medium-quality wines (519/593), struggles with low-quality wines (10/35, 29%), and moderately performs well with high-quality ones (85/165, 52%). It exhibits bias towards medium-quality wines, misclassifying 25 low-quality and 80 high-quality wines as medium-quality wines. Despite this, the model still performs reasonably well, with a weighted f1 score of 77%, making it useful in predicting wine quality.
 
+
 ## Conclusion and Recommendation
 * The modeling effort demonstrates that physicochemical indicators can reliably reflect white wine quality, thus serving as a useful tool for improving both quality evaluation and the wine itself.
   
@@ -66,6 +71,7 @@ The XGBoost with SMOTE outperforms the other models. From the confusion matrix, 
 * Share the findings of this project with wine manufacturers, particularly the variables that can be controlled during the production process such as alcohol content, volatile acidity, free sulfur dioxide levels and pH,  and residual sugars. 
  
 ## Note
+Throughout this project, you'll see references to the problem-solving framework, PACE. The python notebook components are labeled with the respective PACE stages: Plan, Analyze, Construct, and Execute.
 
 ## Links
 * [Project Proposal]()
