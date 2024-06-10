@@ -43,7 +43,7 @@ alcohol|[8.0&ndash;14.9]|
 quality|Based on sensory data [0&ndash;10]|
 
 
-**Note:** The wine samples came from different manufacturers from the northwest region of Portugal and were tested at the official certification entity called CVRVV. Therefore, expect different range of results for each given test. 
+**Note:** The wine samples came from different manufacturers from the northwest region of Portugal and were tested at the official certification entity called CVRVV. Therefore, expect a different range of results for each given test. 
 
 
 ## Modeling and Evaluation
@@ -52,26 +52,26 @@ quality|Based on sensory data [0&ndash;10]|
 
 ![feature_importance_plot](https://github.com/je-marco/Wine-Quality-Prediction/blob/cc927f5e9b527f70a71bb0c84fea4cc1d8a1e180/Feature%20Importance%20for%20XGBoost%20model%20with%20SMOTE%20final.png)
 
-The feature importance graph confirms that key predictors identified during exploratory data analysis closely align with the top features. This confirms that `free sulfur dioxide`, `alcohol`, `volatile acidity`, and `total sulfur dioxide` are key factors in predicting wine quality. 
+The feature importance graph confirms that key predictors identified during exploratory data analysis closely align with the top features. The modeling effort confirms that `free sulfur dioxide`, `alcohol`, `volatile acidity`, and `total sulfur dioxide` are key factors in predicting wine quality. 
 
 **Confusion Matrix:**
 
 ![confusion_matrix](https://github.com/je-marco/Wine-Quality-Prediction/blob/cc080a5adb3ac80718d09fa92e06b5e2a2503587/Confusion%20Matrix%20for%20XGBoost%20model%20with%20SMOTE.png)
 
-The XGBoost with SMOTE outperforms the other models. From the confusion matrix, the model accurately classifies 88% of medium-quality wines (519/593), struggles with low-quality wines (10/35, 29%), and moderately performs well with high-quality ones (85/165, 52%). It exhibits bias towards medium-quality wines, misclassifying 25 low-quality and 80 high-quality wines as medium-quality wines. Despite this, the model still performs reasonably well, with a weighted f1 score of 77%, making it useful in predicting wine quality.
+The XGBoost with SMOTE outperforms the other models. From the confusion matrix, the model accurately classifies 88% of medium-quality wines (519/593), struggles with low-quality wines (10/35, 29%), and moderately performs well with high-quality ones (85/165, 52%). It exhibits bias towards medium-quality wines, misclassifying 25 low-quality and 80 high-quality wines as medium-quality wines. Despite this, the model still performs reasonably well, with a weighted f1 score of 77%, making it helpful in predicting wine quality.
 
 
 ## Conclusion and Recommendation
-* The modeling effort demonstrates that physicochemical indicators can reliably reflect white wine quality, thus serving as a useful tool for improving both quality evaluation and the wine itself.
+* The modeling effort demonstrates that physicochemical indicators can reliably reflect white wine quality, thus serving as a valuable tool for improving both the quality evaluation and the wine itself.
   
-* Integrate the model into a decision support system during wine tasting to improve the speed and consistency of quality evaluations. For instance, the experts could only repeat the tasting if their quality score was significantly different from the class predicted by the model.
+* Integrate the model into a decision support system during wine tasting to improve the speed and consistency of quality evaluations. For instance, the wine expert could only repeat the tasting if the quality score does not belong to the class predicted by the model.
 
 * Improve the effectiveness of the model by adding new features such as grape variety or combination of grape varieties, wine selling price, color, phenolic compounds, and glycerol levels.
 
-* Share the findings of this project with wine manufacturers, particularly the variables that can be controlled during the production process such as alcohol content, volatile acidity, free sulfur dioxide levels and pH,  and residual sugars. 
+* Share the findings of this project with wine manufacturers, particularly the variables that can be controlled during the production process, such as alcohol content, volatile acidity, free sulfur dioxide levels and pH,  and residual sugars. 
  
 ## Note
-Throughout this project, you'll see references to the problem-solving framework, PACE. The python notebook components are labeled with the respective PACE stages: Plan, Analyze, Construct, and Execute.
+Throughout this project, you'll see references to the problem-solving framework, PACE. The Python notebook components are labeled with the respective PACE stages: Plan, Analyze, Construct, and Execute.
 
 ## Links
 * [Project Proposal]()
