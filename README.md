@@ -3,7 +3,7 @@
 ## Overview
 The goal of this project is to analyze the provided dataset and build a predictive model that can offer insights to CVRVV (The Viticulture Commission of the Vinho Verde Region), a wine certification agency, to gain a deeper understanding of factors that affect white wine quality and to aid wine experts during sensory analysis. 
 
-Various algorithms like Multiple Logistic Regression, K-Nearest Neighbors, Support Vector Machine, Random Forest and Extreme Gradient Boosting (XGBoost) were combined with data preprocessing techniques to come up with the final model. The XGBoost with SMOTE outperforms the other models, which performs reasonably well, with a weighted f1 score of 77%, making it useful in predicting wine quality.
+Various algorithms like Multiple Logistic Regression, K-Nearest Neighbors, Support Vector Machine, Random Forest and Extreme Gradient Boosting (XGBoost) were combined with data preprocessing techniques to come up with the final model. The XGBoost with SMOTE outperforms the other models, which performs reasonably well, with a weighted f1 score of 77% during testing, making the model useful in predicting the class where the quality of wine belongs to. 
 
 
 ## Business Understanding
