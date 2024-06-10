@@ -4,14 +4,14 @@
 [Link to Executive Summary]()
 
 ## Business Understanding
-In Portugal’s wine industry, a crucial aspect of quality assurance is the certification and evaluation of wines. During the certification phase, analytical tests are utilized to measure the physicochemical components of the wine, and the wine quality is evaluated using sensory analysis by a panel of experts. This project aims to develop a machine learning model to predict wine quality based on objective analytical test results with the goal of reducing the inherent subjectivity present in human sensory analysis.
+In Portugal’s wine industry, a crucial aspect of quality assurance is the certification and evaluation of wines. During the certification phase, analytical tests are utilized to measure the physicochemical components of the wine, and the wine quality is evaluated using sensory analysis by a panel of experts. This project aims to develop a machine learning model to predict white wine quality based on objective analytical test results with the goal of reducing the inherent subjectivity present in human sensory analysis.
 
 ### Goals and Deliverables
 **Goal:** Analyze the provided dataset and build predictive models that can offer insights to CVRVV (The Viticulture Commission of the Vinho Verde Region), a wine certification agency, to gain a deeper understanding of factors that affect wine quality and to aid wine experts during sensory analysis. 
 
 **Deliverables:**
 1. One-page executive summary that would be presented to external stakeholders.
-2. Complete code python notebook
+2. [Complete code python notebook](https://github.com/je-marco/Wine-Quality-Prediction/blob/cc927f5e9b527f70a71bb0c84fea4cc1d8a1e180/wine_quality_prediction.ipynb)
 
 ### Scope and Limitation
 Due to the constraint of data imbalance, the classes of wine that will be predicted in this modeling effort are the following: 
@@ -46,13 +46,13 @@ quality|Based on sensory data [0&ndash;10]|
 
 **Feature Importance:**
 
-![feature_importance_plot]()
+![feature_importance_plot](https://github.com/je-marco/Wine-Quality-Prediction/blob/cc927f5e9b527f70a71bb0c84fea4cc1d8a1e180/Feature%20Importance%20for%20XGBoost%20model%20with%20SMOTE%20final.png)
 
 The feature importance graph confirms that key predictors identified during exploratory data analysis closely align with the top features. This confirms that `free sulfur dioxide`, `alcohol`, `volatile acidity`, and `total sulfur dioxide` are key factors in predicting wine quality. 
 
 **Confusion Matrix:**
 
-![confusion_matrix]()
+![confusion_matrix](https://github.com/je-marco/Wine-Quality-Prediction/blob/cc927f5e9b527f70a71bb0c84fea4cc1d8a1e180/Confusion%20Matrix%20for%20XGBoost%20model%20with%20SMOTE.png)
 
 The XGBoost with SMOTE outperforms the other models. From the confusion matrix, the model accurately classifies 88% of medium-quality wines (519/593), struggles with low-quality wines (10/35, 29%), and moderately performs well with high-quality ones (85/165, 52%). It exhibits bias towards medium-quality wines, misclassifying 25 low-quality and 80 high-quality wines as medium-quality wines. Despite this, the model still performs reasonably well, with a weighted f1 score of 77%, making it useful in predicting wine quality.
 
