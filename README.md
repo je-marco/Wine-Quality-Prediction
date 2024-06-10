@@ -73,6 +73,4 @@ The XGBoost with SMOTE outperforms the other models. From the confusion matrix, 
 ## Note
 Throughout this project, you'll see references to the problem-solving framework, PACE. The Python notebook components are labeled with the respective PACE stages: Plan, Analyze, Construct, and Execute.
 
-## Links
-* [Project Proposal]()
   
