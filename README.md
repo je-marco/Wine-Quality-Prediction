@@ -3,13 +3,13 @@
 ## Overview
 The goal of this project is to analyze the white wine dataset and build a predictive model that can offer insights to CVRVV (The Viticulture Commission of the Vinho Verde Region), a wine certification agency, to gain a deeper understanding of factors that affect white wine quality and to aid wine experts during sensory analysis. 
 
-Various algorithms like Multiple Logistic Regression, K-Nearest Neighbors, Support Vector Machine, Random Forest, and Extreme Gradient Boosting (XGBoost) were combined with data preprocessing techniques to come up with the final model. The XGBoost with SMOTE outperforms the other models, which performs reasonably well, with a weighted f1 score of 77% during testing, making the model useful in predicting the class where the quality of wine belongs. 
+Various algorithms like Multiple Logistic Regression, K-Nearest Neighbors, Support Vector Machine, Random Forest, and Extreme Gradient Boosting (XGBoost) were combined with data preprocessing techniques to come up with the final model. The XGBoost with SMOTE outperforms the other models, with a weighted f1 score of 77% during testing, making the model useful in predicting the category of quality where a wine belongs. 
 
 
 ## Business Understanding
 In Portugal’s wine industry, a crucial aspect of quality assurance is the certification and evaluation of wines. During the certification phase, analytical tests are utilized to measure the physicochemical components of the wine, and the wine quality is evaluated using sensory analysis by a panel of experts.  
 
-This project aims to develop a machine learning model to predict white wine quality based on objective analytical test results with the goal of reducing the inherent subjectivity present in human sensory analysis. The insights from this project will also help CVRVV (The Viticulture Commission of the Vinho Verde Region) to gain a deeper understanding of factors that affect wine quality and to aid wine experts during sensory analysis. The CVRVV is a wine certification agency with the goal of improving the quality and marketing of Vinho Verde wines. 
+This project aims to develop a machine learning model to predict white wine quality based on objective analytical test results with the goal of reducing the inherent subjectivity present in human sensory analysis. The insights from this project will help the CVRVV (The Viticulture Commission of the Vinho Verde Region) to gain a deeper understanding of the factors that affect wine quality and to aid wine experts during sensory analysis. The CVRVV is a wine certification agency with the goal of improving the quality and marketing of Vinho Verde wines. 
 
 **Deliverables:**
 1. [One-page executive summary that would be presented to stakeholders.](https://docs.google.com/presentation/d/1oDFPnfKkoBjCuXTg55KydqY83c-4uBwVb0ZATAKvQlY/edit?usp=sharing)
@@ -47,6 +47,23 @@ quality|Based on sensory data [0&ndash;10]|
 
 
 ## Modeling and Evaluation
+
+**Modeling results:**
+Algorithm&ndash;Preprocessing Technique|Modeling Process|f1 score
+-----|-----|----|
+XGBoost&ndash;Baseline model| Evaluation| 0.762480	
+XGBoost&ndash;Baseline model| Testing| 0.777840	
+XGBoost&ndash;With feature engineering| Evaluation| 0.771266	
+XGBoost&ndash;With feature engineering| Testing| 0.752879
+XGBoost&ndash;With SMOTE| Evaluation| 0.764714
+XGBoost&ndash;With SMOTE| Testing| 0.768106	
+SVM&ndash;With PCA| Evaluation| 0.740807
+SVM&ndash;With PCA| Testing| 0.765861
+XGBoost&ndash;With SMOTE & PCA| Evaluation| 0.744526	
+XGBoost&ndash;With SMOTE & PCA| Testing| 0.719466	
+
+* During model selection, the evaluation results of the baseline model are very close to the results of the model with SMOTE. Still, the baseline model scored higher during the prediction of the test set. However, the model with SMOTE has more consistent f1 score results during evaluation and testing.
+* Because of the class imbalance, the Baseline model is more effective in classifying medium-class wines, decreasing its ability to predict low and high-quality wine; a wine sample was even classified as high-quality when in reality, it is of low quality. To eliminate the bias towards the majority class, oversampling was done to balance the classes in the training set using SMOTE.
 
 **Feature Importance:**
 
