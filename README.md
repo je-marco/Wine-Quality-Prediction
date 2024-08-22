@@ -13,7 +13,7 @@ This project aims to develop a machine learning model to predict white wine qual
 
 **Deliverables:**
 1. [One-page executive summary that would be presented to stakeholders.](https://docs.google.com/presentation/d/1oDFPnfKkoBjCuXTg55KydqY83c-4uBwVb0ZATAKvQlY/edit?usp=sharing)
-2. [Complete code python notebook](https://github.com/je-marco/Wine-Quality-Prediction/blob/cc927f5e9b527f70a71bb0c84fea4cc1d8a1e180/wine_quality_prediction.ipynb)
+2. [Complete code Python notebook](https://github.com/je-marco/Wine-Quality-Prediction/blob/cc927f5e9b527f70a71bb0c84fea4cc1d8a1e180/wine_quality_prediction.ipynb)
 
 **Scope and Limitation:**  
 Due to the constraint of data imbalance, the classes of wine that will be predicted in this modeling effort are the following: 
